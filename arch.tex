@@ -1,0 +1,341 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+\usepackage{abstract}
+\addto\captionsenglish{\renewcommand{\abstractname}{}}
+\renewcommand{\absnamepos}{empty}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeAbstract}[1]{
+  \vspace{4pt}
+  \begin{abstract}
+    #1
+  \end{abstract}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Don Athalage} \\ \vspace{1pt}
+  % \small 0416648149 $|$ 
+  \href{mailto:dknathalage@gmail.com}{\underline{dknathalage@gmail.com}} $|$ 
+  \href{https://www.linkedin.com/in/dknathalage/}{\underline{linkedin.com/in/dknathalage/}} $|$
+  \href{https://github.com/dknathalage}{\underline{github.com/dknathalage}}
+\end{center}
+
+
+%-----------SUMMARY STATEMENT-----
+\section{Summary Statement}
+Value driven solutions architect with extensive cloud-native architecture experience with proven track record of cost-effective, secure and scalable architecture
+
+\setlength{\multicolsep}{0.0pt plus 0pt minus 0pt}
+%-----------KEY SKILLS-----------
+\section{Key Skills}
+  \begin{multicols}{2} 
+    \begin{itemize}[noitemsep]
+      \item Cloud Engineering: AWS, GCP, Azure, CloudFormation, Terraform
+      \item Programming: Python, C++, JavaScript/TypeScript, Golang
+      \item DevOps: CI/CD, Container Orchestration, Monitoring, Logging
+      \item Machine Learning: Probabilistic Models, Deep Learning, NLP
+    \end{itemize}
+  \end{multicols}
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Solutions Architect}{March 2023 – Present}
+  {The Australia and New Zealand Banking Group}{Melbourne, VIC}
+  \resumeItemListStart
+    \resumeItem{
+      Experienced on cloud migration solutions on container platforms for modern, distributed microservices applications supporting hybrid cloud integration.
+    }
+    \resumeItem{
+      Proof-of-concept solution development in AWS Environments using CICD Pipelines to evaluate feasibility and gain insights. 
+    }
+    \resumeItem{
+      Assess the application portfolio and identify migration candidates, and provide guidance on the target architecture for cloud migration through customer conversation, design workshops and technical analysis.
+    } 
+    \resumeItem{
+      Perform as a trusted technical advisor, setting best practices, enabling Customers to implement well architected, cost effective, solutions using cloud security best practices
+    }
+
+  \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Cloud Solutions Architect Internship}{August 2022 – March 2023}
+      {The Australia and New Zealand Banking Group}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeItem{
+          Developing a deep technical understanding of cloud technologies and help internal customers within ANZ design/redesign their applications for cloud.
+        }
+        \resumeItem{
+          Work to create reusable reference architecture patterns that teams can leverage to migrate on the cloud faster.
+        }
+        \resumeItem{
+          Develop technical expertize on cloud platforms such as AWS, GCP and Container Orchestration
+        } 
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{September 2021 – February 2022}
+      {Deakin University}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeItem{
+          Conducted research on \textit{probabilistic and machine learning models} for 
+          \textit{Named Entity Recognition and Relation Extraction}.
+          }
+        \resumeItem{
+          Conducting research on \textit{deep learning (Transformer)} models on
+          information extraction.
+        }
+        \resumeItem{
+          Developed NLP Pipeline for data cleaning, preprocessing, 
+          entity extraction and relation extraction.
+        }
+
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Deakin University}{Melbourne, VIC}
+      {Bachelor of Software Engineering (Honours) - First Class Honours}{July 2024}
+          \resumeItemListStart
+            \resumeItem{WAM: 85.8}
+            \resumeItem{Peer Mentor - 2020}
+            \resumeItem{Associate Dean Research Summer Project (Scholarship) - 2021}
+            \resumeItem{Deakin Higher Degrees by Research funded project (Scholarship) - 2021}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Certifications}
+
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\textbf{AWS Certified DevOps - Professional}}{}
+  \resumeItemListStart
+    \resumeItem{Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.}
+    \resumeItem{Automate boring tasks with AWS Serverless Application stacks. }
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{AWS Certified Developer - Associate}}{}
+  \resumeItemListStart
+    \resumeItem{Experienced in designing and implementing monitoring, metrics, and logging solutions in a DevOps context to ensure secure and compliant systems.}
+
+    \resumeItem{Skilled in Infrastructure as Code (IAC) using AWS CloudFormation and Terraform, to programmatically manage infrastructure resources.}
+    \resumeItem{Proficient in implementing continuous delivery and deployment techniques, automation and orchestration of releases.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\textbf{AWS Certified Architect - Associate}}{}
+  \resumeItemListStart
+    \resumeItem{Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services services.}
+    \resumeItem{Experienced in implementing security best practices such as encryption, RBAC and policies, and secure application development on AWS.}
+  \resumeItemListEnd
+  
+  \resumeProjectHeading
+  {\textbf{GCP Certified - Associate Cloud Engineer}}{}
+  \resumeItemListStart
+    \resumeItem{Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services services.}
+    \resumeItem{Experienced in implementing security best practices such as encryption, RBAC and policies, and secure application development on AWS.}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Serverless 5G Network Architecture} $|$ \emph{Golang, Simulation, Kubernetes, KNative}}{July 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{\textit{Honours Research Project}}
+      \resumeItem{Research novel approaches on 5G Network Function management using Knative}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Exact Cover Algorithms} 
+      $|$ \emph{C++, Python, Combinatorial Algorithms}}{September 2021 -- February 2022}
+      \resumeItemListStart
+        \resumeItem{\textit{Deakin HDR funded summer research scholarship}}
+        \resumeItem{Conducted research on Zero-Suppresed Binary Decision Diagrams (ZDD) compressing set representation.}
+        \resumeItem{Conducted performance evaluation on special cominatorial algorithm DLX (Exact Covers).}
+        \resumeItem{Implemented said $DanceDD$ and $D^{3}X$ data-structure and algorithm using C++ and Python.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Reinforcement Learning for 5G} $|$ \emph{Python, Simulation, Reinforcement learning}}{September 2021 -- February 2022}
+      \resumeItemListStart
+        \resumeItem{\textit{Deakin ADR summer project scholarship}}
+        \resumeItem{Research novel approaches on 5G Network Slicing optimisation using machine learning}
+        \resumeItem{Implemented a simulation suite for 5G Network Slicing and resource allocation}
+        \resumeItem{Implementing a Policy based Reinforcement Learning Algorthm for Slice Optimisation.}
+        \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\setlength{\multicolsep}{0.0pt plus 0pt minus 0pt}
+    \begin{multicols}{2}
+        {\textbf{Amazon Web Services (AWS)}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{Elastic Compute, Load Balancing, Auto scaling}  
+          \resumeItem{Block Storage, CI/CD, Container Orchestrations}
+          \resumeItem{Serverless with Lambda, DynamoDB, API Gateway, Fargate}
+        \end{itemize}
+
+        % Python
+        {\textbf{Python}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{Probabilistic machine learning models (Hidden Markov Models, Conditional Random Fields).}
+          \resumeItem{Deep learning using Pytorch, Keras and Tensorflow.}
+        \end{itemize}
+
+        {\textbf{JavaScript/TypeScript}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{React frontend developement}  
+          \resumeItem{Express backend developement}  
+          \resumeItem{Hypertext Live Streaming}
+        \end{itemize}
+
+        {\textbf{C++}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{Micro-controller Programming}
+          \resumeItem{Data-structures and Algorithms}
+          \resumeItem{Parallel and Distributed Programming}
+        \end{itemize}
+  \end{multicols}
+
+
+%-----------COMMUNITY AND LEADERSHIP-----------
+\section{Community \& Leadership}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Scout Leader}{January 2016 – December 2018}
+      {Scout troop, Dharamapala College}{Colombo, Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Lead a troop of 20 scouts on camping}
+        \resumeItem{Mentoring peers on personal growth and knowledge}
+        \resumeItem{Representing Sri Lankan Scouting Association on an International Jamboree - Japan}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%------------REFERENCES---------------
+\section{References}
+Available upon request.
+\end{document}

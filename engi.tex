@@ -1,0 +1,332 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+\usepackage{abstract}
+\addto\captionsenglish{\renewcommand{\abstractname}{}}
+\renewcommand{\absnamepos}{empty}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeAbstract}[1]{
+  \vspace{4pt}
+  \begin{abstract}
+    #1
+  \end{abstract}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Don Athalage} \\ \vspace{1pt}
+  % \small 0416648149 $|$ 
+  \href{mailto:dknathalage@gmail.com}{\underline{dknathalage@gmail.com}} $|$ 
+  \href{https://www.linkedin.com/in/dknathalage/}{\underline{linkedin.com/in/dknathalage/}} $|$
+  \href{https://github.com/dknathalage}{\underline{github.com/dknathalage}} $|$ \underline{+61416648149}
+\end{center}
+
+
+%-----------SUMMARY STATEMENT-----
+\section{Summary Statement}
+Accomplished cloud engineering professional with a strong background in cloud-native architecture, proven expertise in designing cost-effective, secure, and scalable solutions. Demonstrated experience in cloud migration, DevOps practices, and AI app development. Passionate about leveraging cloud technologies to drive innovation.
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Solutions Architect}{March 2023 – Present}
+  {The Australia and New Zealand Banking Group}{Melbourne, VIC}
+  \resumeItemListStart
+    \resumeItem{
+      Expertise on cloud migration solutions on container platforms for modern, distributed microservices.
+    }
+    \resumeItem{
+      Proof-of-concept cloud native solution development in AWS Environments using DevOps best practices.
+    }
+    \resumeItem{
+      Assess applications to identify migration candidates to enable cost effective cloud migration of onpremises assets.
+    } 
+    \resumeItem{
+      End-to-end, AI application development on information extraction on architecture diagrams. 
+    }
+    \resumeItem{
+      Lead internal customers on technical implementation of solutions through IaC templates and design diagrams.
+    }
+    \resumeItem{
+      Perform as a trusted technical advisor, setting best practices, enabling customers to implement well architected, cost effective, solutions.
+    }
+  \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Cloud Solutions Architect Internship}{August 2022 – March 2023}
+      {The Australia and New Zealand Banking Group}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeItem{
+          Developing a deep technical understanding of cloud technologies and help internal customers within ANZ design/redesign their applications for cloud.
+        }
+        \resumeItem{
+          Work to create reusable reference architecture patterns that teams can leverage to migrate to cloud faster.
+        }
+        \resumeItem{
+          Develop technical expertize on cloud platforms such as AWS, GCP and Container Orchestration.
+        } 
+        \resumeItem{
+          Develop .Net and Javascript based application for internal infrastructure management, governance processes and cost calculation.
+        }
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{September 2021 – February 2022}
+      {Deakin University}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeItem{
+          Research on probabilistic and machine learning models for Named Entity Recognition and Relation Extraction.
+        }.  
+        \resumeItem{
+          Developed NLP Pipeline for data cleaning, preprocessing, 
+          entity extraction and relation extraction.
+        }
+        \resumeItem{
+          Conducting research on deep learning (Transformer) models on
+          information extraction with proven outcomes.
+        }
+        \resumeItem{
+          Development on scalable pipeline using python that can be used across multiple entity extraction methods.
+        }
+        \resumeItem{
+          Write documentation and communicating outcomes by technical writing and presentations to stakeholders.
+        }
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Deakin University}{Melbourne, VIC}
+      {Bachelor of Software Engineering (Honours) - First Class Honours}{July 2024}
+          \resumeItemListStart
+            \resumeItem{Weighted Average Mark: 85.8}
+            \resumeItem{Peer Mentor - 2020}
+            \resumeItem{Associate Dean Research Summer Project (Scholarship) - 2021}
+            \resumeItem{Deakin Higher Degrees by Research funded project (Scholarship) - 2021}
+            \resumeItem{Proven track record of exceptional academic excellence.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Certifications}
+
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\textbf{AWS Certified DevOps - Professional}}{}
+  \resumeItemListStart
+    \resumeItem{Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.}
+    \resumeItem{Deploy cloud architectures using AWS native CICD pipelines}
+    \resumeItem{Develop AWS infrastructure using Terraform, Cloudformation and AWS CDK}
+    \resumeItem{Implement compliance logic within AWS environment to ensure security and achitecture best practices.}
+    \resumeItem{Automate boring tasks with AWS Serverless Application stacks.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{AWS Certified Developer - Associate}}{}
+  \resumeItemListStart
+    \resumeItem{Experienced in designing and implementing monitoring, metrics, and logging solutions in a DevOps context to ensure secure and compliant systems.}
+
+    \resumeItem{Skilled in Infrastructure as Code (IAC) using AWS CloudFormation and Terraform, to programmatically manage infrastructure resources.}
+    \resumeItem{Proficient in implementing continuous delivery and deployment techniques, automation and orchestration of releases.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\textbf{AWS Certified Architect - Associate}}{}
+  \resumeItemListStart
+    \resumeItem{Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services services.}
+    \resumeItem{Experienced in implementing security best practices such as encryption, RBAC and policies, and secure application development on AWS.}
+  \resumeItemListEnd
+  
+  \resumeProjectHeading
+  {\textbf{GCP Certified - Associate Cloud Engineer}}{}
+  \resumeItemListStart
+    \resumeItem{Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services services.}
+    \resumeItem{Experienced in implementing security best practices such as encryption, RBAC and policies, and secure application development on AWS.}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Serverless 5G Network Architecture} $|$ \emph{Golang, Simulation, Kubernetes, KNative}}{July 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{\textit{Honours Research Project}}
+      \resumeItem{Research novel approaches on 5G Network Function management using Knative}
+      \resumeItem{Deploy 5G Network Function architecture in Kubernetes Cluster and setup CICD pipelines and monitoring.}
+      \resumeItem{Develop GoLang based microservice and Knative serverless control plane logic that enables event driven architecture for User Plane Network Function management in 5G.}
+      \resumeItem{Technical Writing and presentations on findings to academic panels.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Exact Cover Algorithms} 
+      $|$ \emph{C++, Python, Combinatorial Algorithms}}{September 2021 -- February 2022}
+      \resumeItemListStart
+        \resumeItem{\textit{Deakin HDR funded summer research scholarship}}
+        \resumeItem{Conducted research on Zero-Suppresed Binary Decision Diagrams (ZDD) compressing set representation.}
+        \resumeItem{Conducted performance evaluation on special cominatorial algorithm DLX (Exact Covers).}
+        \resumeItem{Implemented said $DanceDD$ and $D^{3}X$ data-structure and algorithm using C++ and Python.}
+        \resumeItem{Memory optimisation using bit manipulation and pointer management}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Reinforcement Learning for 5G} $|$ \emph{Python, Simulation, Reinforcement learning}}{September 2021 -- February 2022}
+      \resumeItemListStart
+        \resumeItem{\textit{Deakin ADR summer project scholarship}}
+        \resumeItem{Research novel approaches on 5G Network Slicing optimisation using machine learning}
+        \resumeItem{Implemented a simulation suite for 5G Network Slicing and resource allocation using python}
+        \resumeItem{Implementing a Policy based Reinforcement Learning Algorthm for Slice Optimisation using PyTorch}
+        \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\setlength{\multicolsep}{0.0pt plus 0pt minus 0pt}
+    \begin{multicols}{2}
+        {\textbf{Cloud Engineering (AWS and GCP)}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{Extensive experience in infrastructure management using IaC tools such as terraform, cloudformation and CDK tools}  
+          \resumeItem{Container based microservices application development using Google Kubernetes Engine}
+          \resumeItem{Serverless with Lambda, DynamoDB, API Gateway, Fargate and AWS Serverless Application Model (SAM)}
+          \resumeItem{Implement CI/CD pipelines using AWS CodePipeline suite, Github actions and Codefresh}
+          \resumeItem{Fullstack application development using Svelte and Google Firebase}
+        \end{itemize}
+
+        % Python
+        {\textbf{Python}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{Probabilistic machine learning models (Hidden Markov Models, Conditional Random Fields).}
+          \resumeItem{Deep learning using Pytorch, Keras and Tensorflow.}
+        \end{itemize}
+
+        {\textbf{JavaScript and .Net}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{React and Svelte frontend development}  
+          \resumeItem{.Net backend developement}  
+          \resumeItem{Hypertext Live Streaming application}
+          \resumeItem{Microservice app development}
+        \end{itemize}
+
+        {\textbf{C++}}{}
+        \vspace{-4pt}
+        \begin{itemize}[itemsep=0pt]
+          \resumeItem{Micro-controller Programming}
+          \resumeItem{Data-structures and Algorithms}
+          \resumeItem{Parallel and Distributed Programming}
+        \end{itemize}
+  \end{multicols}
+
+\end{document}
