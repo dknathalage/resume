@@ -2,7 +2,6 @@
 
 # Ensure 'docs/' exists and create a .nojekyll file to disable Jekyll processing
 mkdir -p docs
-touch docs/.nojekyll
 
 # Start building the index file
 index_file="docs/index.html"
