@@ -30,7 +30,7 @@ education:
 experience:
   - company: Deakin University, Melbourne, VIC
     position: Research Assistant
-    duration: September 2021 – Present
+    duration: September 2021 - Present
     details:
       - Conducting thorough literature review on NLP information extraction methods.
       - Researched probabilistic and deep learning models for Named Entity Recognition.
