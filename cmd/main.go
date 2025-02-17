@@ -60,7 +60,6 @@ const htmlTemplate = `
     </style>
 </head>
 <body class="max-w-2xl mx-auto text-gray-800">
-
     <header class="text-center mb-3">
         <h1 class="text-2xl font-bold">{{ .Name }}</h1>
         <p class="text-sm">
@@ -77,16 +76,16 @@ const htmlTemplate = `
     </section>
 
     <section class="section">
-        <h2 class="text-lg font-semibold border-b">Key Skills</h2>
-        <ul class="grid grid-cols-2">
+        <h2 class="text-lg font-semibold mt-2 border-b">Key Skills</h2>
+        <ul class="grid grid-cols-2 my-1">
             {{ range .KeySkills }}<li>{{ . }}</li>{{ end }}
         </ul>
     </section>
 
     <section class="section">
-        <h2 class="text-lg font-semibold border-b">Education</h2>
+        <h2 class="text-lg font-semibold mt-2 border-b">Education</h2>
         {{ range .Education }}
-        <div class="mt-1">
+        <div class="my-1">
             <div class="flex justify-between">
                 <span class="font-bold text-sm">{{ .Degree }}</span>
                 <span class="text-xs text-gray-600">{{ .Year }}</span>
@@ -100,9 +99,9 @@ const htmlTemplate = `
     </section>
 
     <section class="section">
-        <h2 class="text-lg font-semibold border-b">Experience</h2>
+        <h2 class="text-lg font-semibold mt-2 border-b">Experience</h2>
         {{ range .Experience }}
-        <div class="mt-1">
+        <div class=" my-1">
             <div class="flex justify-between">
                 <span class="font-bold text-sm">{{ .Position }}</span>
                 <span class="text-xs text-gray-600">{{ .Duration }}</span>
@@ -116,9 +115,9 @@ const htmlTemplate = `
     </section>
 
     <section class="section">
-        <h2 class="text-lg font-semibold border-b">Projects</h2>
+        <h2 class="text-lg font-semibold mt-2 border-b">Projects</h2>
         {{ range .Projects }}
-        <div class="mt-1">
+        <div class="my-1">
             <h3 class="font-bold text-sm">{{ .Name }}</h3>
             <p class="text-xs text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
             <ul class="list-disc pl-3 text-xs text-gray-700">
@@ -129,8 +128,8 @@ const htmlTemplate = `
     </section>
 
     <section class="section">
-        <h2 class="text-lg font-semibold border-b">References</h2>
-        <p class="text-xs">{{ .References }}</p>
+        <h2 class="text-lg font-semibold mt-2 border-b">References</h2>
+        <p class="text-xs my-1">{{ .References }}</p>
     </section>
 
 </body>
