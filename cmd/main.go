@@ -62,7 +62,7 @@ const htmlTemplate = `
 <body class="max-w-2xl mx-auto text-gray-800">
     <header class="text-center mb-3">
         <h1 class="text-2xl font-bold">{{ .Name }}</h1>
-        <p class="text-sm">
+        <p class="">
             <a href="mailto:{{ .Email }}" class="text-blue-600 hover:underline">{{ .Email }}</a> | 
             {{ .Phone }} | 
             <a href="{{ .LinkedIn }}" class="text-blue-600 hover:underline">LinkedIn</a> | 
@@ -87,7 +87,7 @@ const htmlTemplate = `
         {{ range .Education }}
         <div class="my-1">
             <div class="flex justify-between">
-                <span class="font-bold text-sm">{{ .Degree }}</span>
+                <span class="font-bold ">{{ .Degree }}</span>
                 <span class="text-gray-600">{{ .Year }}</span>
             </div>
             <p class="text-gray-700">{{ .Institution }}</p>
@@ -103,7 +103,7 @@ const htmlTemplate = `
         {{ range .Experience }}
         <div class=" my-1">
             <div class="flex justify-between">
-                <span class="font-bold text-sm">{{ .Position }}</span>
+                <span class="font-bold ">{{ .Position }}</span>
                 <span class="text-gray-600">{{ .Duration }}</span>
             </div>
             <p class="text-gray-700">{{ .Company }}</p>
@@ -118,7 +118,7 @@ const htmlTemplate = `
         <h2 class="text-lg font-semibold mt-2 border-b">Projects</h2>
         {{ range .Projects }}
         <div class="my-1">
-            <h3 class="font-bold text-sm">{{ .Name }}</h3>
+            <h3 class="font-bold ">{{ .Name }}</h3>
             <p class="text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
             <ul class="list-disc pl-3 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
