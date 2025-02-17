@@ -1,0 +1,41 @@
+name: Generate Resume Markdown
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  generate-markdown:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.23"
+
+      - name: Install dependencies
+        run: go mod tidy
+
+      - name: Find and generate markdown files
+        run: |
+          ./generate-resumes.sh
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add resumes/*.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated: Generated markdown files from YAML"
+            git push
+          fi
