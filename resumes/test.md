@@ -1,9 +1,6 @@
-# Don Athalage
 
-<style>
-body { font-family: "Times New Roman", serif; }
-ul { padding-left: 20px; }
-</style>
+<div style="font-family: 'Times New Roman'">
+<h1> Don Athalage </h1>
 
 **Email:** [dknathalage@gmail.com](mailto:dknathalage@gmail.com) | **Phone:** 0416648149  
 **LinkedIn:** [https://www.linkedin.com/in/don-athalage/](https://www.linkedin.com/in/don-athalage/) | **GitHub:** [https://github.com/kushan-nilanga](https://github.com/kushan-nilanga)
@@ -101,3 +98,4 @@ Technologies: *Python, Simulation, Reinforcement Learning, *
 
 ## References
 Available upon request
+</div>
