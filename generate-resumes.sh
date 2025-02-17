@@ -1,6 +1,13 @@
 find resumes -type f -name "*.yaml" | while read yaml_file; do
-    md_file="${yaml_file%.yaml}.md"  # Replace .yaml with .md, keeping the same directory structure
-    go run cmd/main.go "$yaml_file"  # Run the Go program to generate the markdown
-    mv resume.md "$md_file"  # Move the generated file to the correct location
-    echo "Generated: $md_file"
+    # Create matching HTML path inside 'docs/'
+    html_file="docs/${yaml_file#resumes/}"  # Replace 'resumes/' with 'docs/'
+    html_file="${html_file%.yaml}.html"  # Change file extension from .yaml to .html
+
+    # Ensure target directory exists
+    mkdir -p "$(dirname "$html_file")"
+
+    # Run Go program to generate HTML
+    go run cmd/main.go "$yaml_file"
+
+    echo "Generated: $html_file"
 done
