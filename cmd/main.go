@@ -47,12 +47,9 @@ type Resume struct {
 	References string `yaml:"references"`
 }
 
-const markdownTemplate = `# {{ .Name }}
-
-<style>
-body { font-family: "Times New Roman", serif; }
-ul { padding-left: 20px; }
-</style>
+const markdownTemplate = `
+<div style="font-family: 'Times New Roman'">
+<h1> {{ .Name }} </h1>
 
 **Email:** [{{ .Email }}](mailto:{{ .Email }}) | **Phone:** {{ .Phone }}  
 **LinkedIn:** [{{ .LinkedIn }}]({{ .LinkedIn }}) | **GitHub:** [{{ .GitHub }}]({{ .GitHub }})
@@ -125,6 +122,7 @@ Technologies: *{{ range .Technologies }}{{ . }}, {{ end }}*
 
 ## References
 {{ .References }}
+</div>
 `
 
 func generateMarkdown(resume Resume, outputFile string) {
