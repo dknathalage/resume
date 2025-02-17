@@ -80,7 +80,7 @@ const htmlTemplate = `
 
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Key Skills</h2>
-        <ul class="grid grid-cols-2 my-1">
+        <ul class="list-disc grid grid-cols-2 my-1 pl-4">
             {{ range .KeySkills }}<li>{{ . }}</li>{{ end }}
         </ul>
     </section>
@@ -93,7 +93,7 @@ const htmlTemplate = `
                 <span class="font-bold ">{{ .Degree }}</span>
                 <span class="text-gray-600">{{ .Year }}</span>
             </div>
-            <p class="text-gray-700">{{ .Institution }}</p>
+            <p class="text-gray-700 italic">{{ .Institution }}</p>
             <ul class="list-disc pl-3 text-gray-700">
                 {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
             </ul>
@@ -106,10 +106,10 @@ const htmlTemplate = `
         {{ range .Experience }}
         <div class=" my-1">
             <div class="flex justify-between">
-                <span class="font-bold ">{{ .Position }}</span>
+                <span class="font-bold">{{ .Position }}</span>
                 <span class="text-gray-600">{{ .Duration }}</span>
             </div>
-            <p class="text-gray-700">{{ .Company }}</p>
+            <p class="text-gray-700 italic">{{ .Company }}</p>
             <ul class="list-disc pl-3 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
             </ul>
