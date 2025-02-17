@@ -12,7 +12,7 @@ Software engineer with expertise in Go and web development.
 
 ## Experience
 
-### Software Engineer - Tech Corp (Jan 2020 - Present)
+### Software Engineer - Tech Corp (Jan 2023 - Present)
 <ul>
 <li>Developed scalable microservices in Go.</li><li>Led a team of 5 developers.</li>
 </ul>
