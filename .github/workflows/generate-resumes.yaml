@@ -23,10 +23,7 @@ jobs:
 
       - name: Generate HTML files
         run: |
-          mkdir -p docs
-          find resumes -type f -name "*.yaml" | while read yaml_file; do
-            go run main.go "$yaml_file"
-          done
+          ./generate-resumes.sh
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
