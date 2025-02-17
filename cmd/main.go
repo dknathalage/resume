@@ -48,7 +48,7 @@ type Resume struct {
 }
 
 const markdownTemplate = `
-<div style="font-family: 'Times New Roman'">
+<span style="font-family:'Times New Roman';">
 <h1> {{ .Name }} </h1>
 
 **Email:** [{{ .Email }}](mailto:{{ .Email }}) | **Phone:** {{ .Phone }}  
@@ -122,7 +122,8 @@ Technologies: *{{ range .Technologies }}{{ . }}, {{ end }}*
 
 ## References
 {{ .References }}
-</div>
+</span>
+
 `
 
 func generateMarkdown(resume Resume, outputFile string) {
