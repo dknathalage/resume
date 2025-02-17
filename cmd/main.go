@@ -88,10 +88,10 @@ const htmlTemplate = `
         <div class="my-1">
             <div class="flex justify-between">
                 <span class="font-bold text-sm">{{ .Degree }}</span>
-                <span class="text-xs text-gray-600">{{ .Year }}</span>
+                <span class="text-gray-600">{{ .Year }}</span>
             </div>
-            <p class="text-xs text-gray-700">{{ .Institution }}</p>
-            <ul class="list-disc pl-3 text-xs text-gray-700">
+            <p class="text-gray-700">{{ .Institution }}</p>
+            <ul class="list-disc pl-3 text-gray-700">
                 {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
@@ -104,10 +104,10 @@ const htmlTemplate = `
         <div class=" my-1">
             <div class="flex justify-between">
                 <span class="font-bold text-sm">{{ .Position }}</span>
-                <span class="text-xs text-gray-600">{{ .Duration }}</span>
+                <span class="text-gray-600">{{ .Duration }}</span>
             </div>
-            <p class="text-xs text-gray-700">{{ .Company }}</p>
-            <ul class="list-disc pl-3 text-xs text-gray-700">
+            <p class="text-gray-700">{{ .Company }}</p>
+            <ul class="list-disc pl-3 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
@@ -119,8 +119,8 @@ const htmlTemplate = `
         {{ range .Projects }}
         <div class="my-1">
             <h3 class="font-bold text-sm">{{ .Name }}</h3>
-            <p class="text-xs text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
-            <ul class="list-disc pl-3 text-xs text-gray-700">
+            <p class="text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
+            <ul class="list-disc pl-3 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
@@ -129,7 +129,7 @@ const htmlTemplate = `
 
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">References</h2>
-        <p class="text-xs my-1">{{ .References }}</p>
+        <p class="my-1">{{ .References }}</p>
     </section>
 
 </body>
