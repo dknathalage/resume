@@ -56,11 +56,7 @@ const htmlTemplate = `
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{{ .Name }} - Resume</title>
     <style>
-        body { font-family: "Times New Roman", serif; margin: 10px; }
-        h1, h2 { margin-bottom: 10px; }
-        .section { margin-bottom: 10px; }
-        ul { padding-left: 15px; margin: 3px 0; }
-        li { margin-bottom: 2px; }
+        body { font-family: "Times New Roman", serif;}
     </style>
 </head>
 <body class="max-w-2xl mx-auto text-gray-800">
@@ -76,13 +72,13 @@ const htmlTemplate = `
     </header>
 
     <section class="section">
-        <h2 class="text-lg font-semibold border-b">Summary</h2>
-        <p class="text-sm">{{ .Summary }}</p>
+        <h2 class="text-lg font-semibold mt-2 border-b">Summary</h2>
+        <p class="text-md my-1">{{ .Summary }}</p>
     </section>
 
     <section class="section">
         <h2 class="text-lg font-semibold border-b">Key Skills</h2>
-        <ul class="grid grid-cols-2 text-sm">
+        <ul class="grid grid-cols-2">
             {{ range .KeySkills }}<li>{{ . }}</li>{{ end }}
         </ul>
     </section>
