@@ -1,0 +1,27 @@
+name: Jane Doe
+email: jane.doe@example.com
+phone: "123-456-7890"
+linkedin: https://linkedin.com/in/janedoe
+github: https://github.com/janedoe
+summary: Software engineer with expertise in Go and web development.
+experience:
+  - company: Tech Corp
+    position: Software Engineer
+    duration: Jan 2020 - Present
+    details:
+      - Developed scalable microservices in Go.
+      - Led a team of 5 developers.
+education:
+  - institution: University of Example
+    degree: BSc Computer Science
+    year: 2019
+skills:
+  - Go
+  - Docker
+  - Kubernetes
+projects:
+  - name: ProjectX
+    description: A high-performance API gateway.
+    technologies:
+      - Go
+      - GraphQL
