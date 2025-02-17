@@ -59,7 +59,7 @@ const htmlTemplate = `
         body { font-family: "Times New Roman", serif;}
     </style>
 </head>
-<body class="max-w-2xl mx-auto text-gray-800">
+<body class="max-w-2xl mx-auto my-10 text-gray-800">
     <header class="text-center mb-3">
         <h1 class="text-2xl font-bold">{{ .Name }}</h1>
         <p class="">
