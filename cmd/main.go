@@ -47,70 +47,101 @@ type Resume struct {
 	References string `yaml:"references"`
 }
 
-const htmlTemplate = `<!DOCTYPE html>
+const htmlTemplate = `
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Name }}'s Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{{ .Name }} - Resume</title>
     <style>
-        body { font-family: "Times New Roman", serif; margin: 40px; }
-        h1, h2 { color: #333; }
-        .contact { margin-bottom: 20px; }
-        .section { margin-bottom: 30px; }
-        ul { padding-left: 20px; }
+        body { font-family: "Times New Roman", serif; margin: 10px; }
+        h1, h2 { margin-bottom: 10px; }
+        .section { margin-bottom: 10px; }
+        ul { padding-left: 15px; margin: 3px 0; }
+        li { margin-bottom: 2px; }
     </style>
 </head>
-<body>
-    <h1>{{ .Name }}</h1>
-    <div class="contact">
-        <p>Email: <a href="mailto:{{ .Email }}">{{ .Email }}</a></p>
-        <p>Phone: {{ .Phone }}</p>
-        <p>LinkedIn: <a href="{{ .LinkedIn }}">{{ .LinkedIn }}</a></p>
-        <p>GitHub: <a href="{{ .GitHub }}">{{ .GitHub }}</a></p>
-    </div>
+<body class="max-w-2xl mx-auto text-gray-800">
 
-    <div class="section">
-        <h2>Summary</h2>
-        <p>{{ .Summary }}</p>
-    </div>
+    <header class="text-center mb-3">
+        <h1 class="text-2xl font-bold">{{ .Name }}</h1>
+        <p class="text-sm">
+            <a href="mailto:{{ .Email }}" class="text-blue-600 hover:underline">{{ .Email }}</a> | 
+            {{ .Phone }} | 
+            <a href="{{ .LinkedIn }}" class="text-blue-600 hover:underline">LinkedIn</a> | 
+            <a href="{{ .GitHub }}" class="text-blue-600 hover:underline">GitHub</a>
+        </p>
+    </header>
 
-    <div class="section">
-        <h2>Key Skills</h2>
-        <ul>{{ range .KeySkills }}<li>{{ . }}</li>{{ end }}</ul>
-    </div>
+    <section class="section">
+        <h2 class="text-lg font-semibold border-b">Summary</h2>
+        <p class="text-sm">{{ .Summary }}</p>
+    </section>
 
-    <div class="section">
-        <h2>Education</h2>
+    <section class="section">
+        <h2 class="text-lg font-semibold border-b">Key Skills</h2>
+        <ul class="grid grid-cols-2 text-sm">
+            {{ range .KeySkills }}<li>{{ . }}</li>{{ end }}
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="text-lg font-semibold border-b">Education</h2>
         {{ range .Education }}
-        <h3>{{ .Degree }} - {{ .Institution }} ({{ .Year }})</h3>
-        <ul>{{ range .Achievements }}<li>{{ . }}</li>{{ end }}</ul>
+        <div class="mt-1">
+            <div class="flex justify-between">
+                <span class="font-bold text-sm">{{ .Degree }}</span>
+                <span class="text-xs text-gray-600">{{ .Year }}</span>
+            </div>
+            <p class="text-xs text-gray-700">{{ .Institution }}</p>
+            <ul class="list-disc pl-3 text-xs text-gray-700">
+                {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
+            </ul>
+        </div>
         {{ end }}
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Experience</h2>
+    <section class="section">
+        <h2 class="text-lg font-semibold border-b">Experience</h2>
         {{ range .Experience }}
-        <h3>{{ .Position }} - {{ .Company }} ({{ .Duration }})</h3>
-        <ul>{{ range .Details }}<li>{{ . }}</li>{{ end }}</ul>
+        <div class="mt-1">
+            <div class="flex justify-between">
+                <span class="font-bold text-sm">{{ .Position }}</span>
+                <span class="text-xs text-gray-600">{{ .Duration }}</span>
+            </div>
+            <p class="text-xs text-gray-700">{{ .Company }}</p>
+            <ul class="list-disc pl-3 text-xs text-gray-700">
+                {{ range .Details }}<li>{{ . }}</li>{{ end }}
+            </ul>
+        </div>
         {{ end }}
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Projects</h2>
+    <section class="section">
+        <h2 class="text-lg font-semibold border-b">Projects</h2>
         {{ range .Projects }}
-        <h3>{{ .Name }}</h3>
-        <p><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
-        <ul>{{ range .Details }}<li>{{ . }}</li>{{ end }}</ul>
+        <div class="mt-1">
+            <h3 class="font-bold text-sm">{{ .Name }}</h3>
+            <p class="text-xs text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
+            <ul class="list-disc pl-3 text-xs text-gray-700">
+                {{ range .Details }}<li>{{ . }}</li>{{ end }}
+            </ul>
+        </div>
         {{ end }}
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>References</h2>
-        <p>{{ .References }}</p>
-    </div>
+    <section class="section">
+        <h2 class="text-lg font-semibold border-b">References</h2>
+        <p class="text-xs">{{ .References }}</p>
+    </section>
+
 </body>
-</html>`
+</html>
+
+
+`
 
 func generateHTML(resume Resume, outputFile string) {
 	tmpl, err := template.New("resume").Parse(htmlTemplate)
