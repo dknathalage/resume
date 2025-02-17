@@ -55,8 +55,11 @@ const htmlTemplate = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{{ .Name }} - Resume</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
     <style>
-        body { font-family: "Times New Roman", serif;}
+        body {
+        font-family: "Computer Modern Serif", serif;
+        }
     </style>
 </head>
 <body class="max-w-2xl mx-auto my-10 text-gray-800 text-base">
