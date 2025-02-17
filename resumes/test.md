@@ -1,5 +1,5 @@
 
-<div style="font-family: 'Times New Roman'">
+<span style="font-family:'Times New Roman';">
 <h1> Don Athalage </h1>
 
 **Email:** [dknathalage@gmail.com](mailto:dknathalage@gmail.com) | **Phone:** 0416648149  
@@ -98,4 +98,5 @@ Technologies: *Python, Simulation, Reinforcement Learning, *
 
 ## References
 Available upon request
-</div>
+</span>
+
