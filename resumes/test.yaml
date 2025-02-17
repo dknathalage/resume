@@ -1,27 +1,69 @@
-name: Jane Doe
-email: jane.doe@example.com
-phone: "123-456-7890"
-linkedin: https://linkedin.com/in/janedoe
-github: https://github.com/janedoe
-summary: Software engineer with expertise in Go and web development.
-experience:
-  - company: Tech Corp
-    position: Software Engineer
-    duration: Jan 2023 - Present
-    details:
-      - Developed scalable microservices in Go.
-      - Led a team of 5 developers.
+name: Don Athalage
+email: dknathalage@gmail.com
+phone: "0416648149"
+linkedin: https://www.linkedin.com/in/don-athalage/
+github: https://github.com/kushan-nilanga
+summary: |
+  I am a highly competent software engineering undergraduate student with multiple research projects and
+  attractive academic performance. In addition, I have taken a leadership role in multiple projects with impressive
+  results. I am an excellent team player and have extensive knowledge in technical subjects in software
+  engineering, machine learning, cloud development and data engineering.
+
+key_skills:
+  - Ability to work in teams and independently.
+  - Critical thinker and fast learner.
+  - Strong interpersonal and engagement skills.
+  - Full-stack development.
+  - Cloud Engineering.
+  - Machine learning and natural language processing.
+
 education:
-  - institution: University of Example
-    degree: BSc Computer Science
-    year: 2019
-skills:
-  - Go
-  - Docker
-  - Kubernetes
+  - institution: Deakin University, Melbourne, VIC
+    degree: Bachelor of Software Engineering (Honours)
+    year: "Expected December 2023"
+    wam: "85.8"
+    achievements:
+      - Peer Mentor - 2020
+      - Associate Dean Research Summer Project (Scholarship) - 2021
+      - Deakin Higher Degrees by Research funded project (Scholarship) - 2021
+
+experience:
+  - company: Deakin University, Melbourne, VIC
+    position: Research Assistant
+    duration: September 2021 – Present
+    details:
+      - Conducting thorough literature review on NLP information extraction methods.
+      - Researched probabilistic and deep learning models for Named Entity Recognition.
+      - Developed an NLP pipeline for data cleaning, preprocessing, and relation extraction.
+
 projects:
-  - name: ProjectX
-    description: A high-performance API gateway.
-    technologies:
-      - Go
-      - GraphQL
+  - name: Exact Cover Algorithms
+    technologies: [C++, Python, Combinatorial Algorithms]
+    details:
+      - Conducted research on Zero-Suppressed Binary Decision Diagrams (ZDD).
+      - Studied DLX algorithms for solving exact cover problems.
+
+  - name: Reinforcement Learning for 5G
+    technologies: [Python, Simulation, Reinforcement Learning]
+    details:
+      - Studied 5G New Radio Specification on Network Function Virtualization.
+      - Developed reinforcement learning algorithms for network slicing optimization.
+
+technical_skills:
+  - category: Programming
+    skills: [C++, Python, JavaScript, TypeScript, C#, Dart]
+  - category: Cloud & DevOps
+    skills: [AWS, Docker, Kubernetes, CI/CD]
+  - category: Databases
+    skills: [MySQL, PostgreSQL, MongoDB, GraphQL]
+  - category: IoT & Embedded
+    skills: [Arduino, RaspberryPi, Robotics]
+
+community:
+  - role: Scout Leader
+    duration: January 2016 – December 2018
+    details:
+      - Led a troop of 20 scouts on camping.
+      - Mentored peers on personal growth and knowledge.
+
+references: "Available upon request"

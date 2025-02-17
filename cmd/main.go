@@ -10,32 +10,49 @@ import (
 )
 
 type Resume struct {
-	Name       string `yaml:"name"`
-	Email      string `yaml:"email"`
-	Phone      string `yaml:"phone"`
-	LinkedIn   string `yaml:"linkedin"`
-	GitHub     string `yaml:"github"`
-	Summary    string `yaml:"summary"`
+	Name      string   `yaml:"name"`
+	Email     string   `yaml:"email"`
+	Phone     string   `yaml:"phone"`
+	LinkedIn  string   `yaml:"linkedin"`
+	GitHub    string   `yaml:"github"`
+	Summary   string   `yaml:"summary"`
+	KeySkills []string `yaml:"key_skills"`
+	Education []struct {
+		Institution  string   `yaml:"institution"`
+		Degree       string   `yaml:"degree"`
+		Year         string   `yaml:"year"`
+		WAM          string   `yaml:"wam"`
+		Achievements []string `yaml:"achievements"`
+	} `yaml:"education"`
 	Experience []struct {
 		Company  string   `yaml:"company"`
 		Position string   `yaml:"position"`
 		Duration string   `yaml:"duration"`
 		Details  []string `yaml:"details"`
 	} `yaml:"experience"`
-	Education []struct {
-		Institution string `yaml:"institution"`
-		Degree      string `yaml:"degree"`
-		Year        string `yaml:"year"`
-	} `yaml:"education"`
-	Skills   []string `yaml:"skills"`
 	Projects []struct {
 		Name         string   `yaml:"name"`
-		Description  string   `yaml:"description"`
 		Technologies []string `yaml:"technologies"`
+		Details      []string `yaml:"details"`
 	} `yaml:"projects"`
+	TechnicalSkills []struct {
+		Category string   `yaml:"category"`
+		Skills   []string `yaml:"skills"`
+	} `yaml:"technical_skills"`
+	Community []struct {
+		Role     string   `yaml:"role"`
+		Duration string   `yaml:"duration"`
+		Details  []string `yaml:"details"`
+	} `yaml:"community"`
+	References string `yaml:"references"`
 }
 
 const markdownTemplate = `# {{ .Name }}
+
+<style>
+body { font-family: "Times New Roman", serif; }
+ul { padding-left: 20px; }
+</style>
 
 **Email:** [{{ .Email }}](mailto:{{ .Email }}) | **Phone:** {{ .Phone }}  
 **LinkedIn:** [{{ .LinkedIn }}]({{ .LinkedIn }}) | **GitHub:** [{{ .GitHub }}]({{ .GitHub }})
@@ -44,6 +61,24 @@ const markdownTemplate = `# {{ .Name }}
 
 ## Summary
 {{ .Summary }}
+
+---
+
+## Key Skills
+<ul>
+{{ range .KeySkills }}<li>{{ . }}</li>{{ end }}
+</ul>
+
+---
+
+## Education
+{{ range .Education }}
+### {{ .Degree }} - {{ .Institution }} ({{ .Year }})
+- WAM: {{ .WAM }}
+<ul>
+{{ range .Achievements }}<li>{{ . }}</li>{{ end }}
+</ul>
+{{ end }}
 
 ---
 
@@ -57,29 +92,39 @@ const markdownTemplate = `# {{ .Name }}
 
 ---
 
-## Education
-{{ range .Education }}
-### {{ .Degree }} - {{ .Institution }} ({{ .Year }})
-{{ end }}
-
----
-
-## Skills
-<ul>
-{{ range .Skills }}<li>{{ . }}</li>{{ end }}
-</ul>
-
----
-
 ## Projects
 {{ range .Projects }}
 ### {{ .Name }}
-{{ .Description }}
+Technologies: *{{ range .Technologies }}{{ . }}, {{ end }}*
+<ul>
+{{ range .Details }}<li>{{ . }}</li>{{ end }}
+</ul>
+{{ end }}
 
-**Technologies:**  
-{{ range .Technologies }}- {{ . }}
+---
+
+## Technical Skills
+{{ range .TechnicalSkills }}
+### {{ .Category }}
+<ul>
+{{ range .Skills }}<li>{{ . }}</li>{{ end }}
+</ul>
 {{ end }}
+
+---
+
+## Community & Leadership
+{{ range .Community }}
+### {{ .Role }} ({{ .Duration }})
+<ul>
+{{ range .Details }}<li>{{ . }}</li>{{ end }}
+</ul>
 {{ end }}
+
+---
+
+## References
+{{ .References }}
 `
 
 func generateMarkdown(resume Resume, outputFile string) {
