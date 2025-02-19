@@ -88,22 +88,6 @@ const htmlTemplate = `
     {{ end }}
 
     <section class="section">
-        <h2 class="text-lg font-semibold mt-2 border-b">Education</h2>
-        {{ range .Education }}
-        <div class="my-1">
-            <div class="flex justify-between">
-                <span class="font-bold ">{{ .Degree }}</span>
-                <span class="text-gray-600">{{ .Year }}</span>
-            </div>
-            <p class="text-gray-700 italic">{{ .Institution }}</p>
-            <ul class="list-disc pl-4 text-gray-700">
-                {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
-            </ul>
-        </div>
-        {{ end }}
-    </section>
-
-    <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Experience</h2>
         {{ range .Experience }}
         <div class=" my-1">
@@ -114,6 +98,22 @@ const htmlTemplate = `
             <p class="text-gray-700 italic">{{ .Company }}</p>
             <ul class="list-disc pl-4 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </section>
+
+    <section class="section">
+        <h2 class="text-lg font-semibold mt-2 border-b">Education</h2>
+        {{ range .Education }}
+        <div class="my-1">
+            <div class="flex justify-between">
+                <span class="font-bold ">{{ .Degree }}</span>
+                <span class="text-gray-600">{{ .Year }}</span>
+            </div>
+            <p class="text-gray-700 italic">{{ .Institution }}</p>
+            <ul class="list-disc pl-4 text-gray-700">
+                {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
         {{ end }}
