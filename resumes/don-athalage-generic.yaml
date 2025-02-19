@@ -17,7 +17,7 @@ key_skills:
 education:
   - institution: Deakin University, Melbourne, VIC
     degree: Bachelor of Software Engineering (Honours)
-    year: "Expected December 2023"
+    year: "December 2023"
     wam: "85.8"
     achievements:
       - Peer Mentor - 2020
@@ -29,9 +29,6 @@ experience:
     position: Research Assistant
     duration: September 2021 - Present
     details:
-      - Conducting thorough literature review on NLP information extraction methods.
-      - Researched probabilistic and deep learning models for Named Entity Recognition.
-      - Developed an NLP pipeline for data cleaning, preprocessing, and relation extraction.
   - company: ANZ Banking Group, Melbourne, VIC
     position: Solutions Architect Intern
     duration: September 2021 - Present
@@ -60,11 +57,11 @@ projects:
 
 technical_skills:
   - category: Programming
-    skills: [C++, Python, JavaScript, TypeScript, C#, Dart]
+    skills: [Python, JavaScript, C#, Golang]
   - category: Cloud & DevOps
-    skills: [AWS, Docker, Kubernetes, CI/CD]
+    skills: [GCP, Docker, Kubernetes, Github Actions]
   - category: Databases
-    skills: [MySQL, PostgreSQL, MongoDB, GraphQL]
+    skills: [MySQL, MongoDB]
   - category: IoT & Embedded
     skills: [Arduino, RaspberryPi, Robotics]
 
