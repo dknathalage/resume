@@ -62,7 +62,7 @@ const htmlTemplate = `
         }
     </style>
 </head>
-<body class="max-w-3xl mx-auto my-5 text-gray-800 text-base">
+<body class="max-w-3xl mx-auto my-5 text-gray-800 text-sm">
     <header class="text-center mb-3">
         <h1 class="text-2xl font-bold">{{ .Name }}</h1>
         <p class="">
