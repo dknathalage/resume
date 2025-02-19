@@ -67,16 +67,16 @@ const htmlTemplate = `
         <h1 class="text-2xl font-bold">{{ .Name }}</h1>
         <p class="">
             {{ if .Email }}
-                <a href="mailto:{{ .Email }}" class="text-blue-600 hover:underline">{{ .Email }}</a> | 
+                <a href="mailto:{{ .Email }}" class="text-blue-600 hover:underline">{{ .Email }}</a> 
             {{ end }}
             {{ if .Phone }}
-                {{ .Phone }} | 
+                | {{ .Phone }}
             {{ end }}
             {{ if .LinkedIn }}
-                <a href="{{ .LinkedIn }}" class="text-blue-600 hover:underline">LinkedIn</a> | 
+                | <a href="{{ .LinkedIn }}" class="text-blue-600 hover:underline">LinkedIn</a> 
             {{ end }}
             {{ if .GitHub }}
-                <a href="{{ .GitHub }}" class="text-blue-600 hover:underline">GitHub</a>
+                | <a href="{{ .GitHub }}" class="text-blue-600 hover:underline">GitHub</a>
             {{ end }}
         </p>
     </header>
