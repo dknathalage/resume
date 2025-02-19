@@ -94,7 +94,7 @@ const htmlTemplate = `
                 <span class="text-gray-600">{{ .Year }}</span>
             </div>
             <p class="text-gray-700 italic">{{ .Institution }}</p>
-            <ul class="list-disc pl-3 text-gray-700">
+            <ul class="list-disc pl-4 text-gray-700">
                 {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
@@ -110,7 +110,7 @@ const htmlTemplate = `
                 <span class="text-gray-600">{{ .Duration }}</span>
             </div>
             <p class="text-gray-700 italic">{{ .Company }}</p>
-            <ul class="list-disc pl-3 text-gray-700">
+            <ul class="list-disc pl-4 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
@@ -123,7 +123,7 @@ const htmlTemplate = `
         <div class="my-1">
             <h3 class="font-bold ">{{ .Name }}</h3>
             <p class="text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
-            <ul class="list-disc pl-3 text-gray-700">
+            <ul class="list-disc pl-4 text-gray-700">
                 {{ range .Details }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
