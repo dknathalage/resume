@@ -90,7 +90,7 @@ const htmlTemplate = `
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Experience</h2>
         {{ range .Experience }}
-        <div class=" my-1">
+        <div class=" my-2">
             <div class="flex justify-between">
                 <span class="font-bold">{{ .Position }}</span>
                 <span class="text-gray-600">{{ .Duration }}</span>
@@ -106,7 +106,7 @@ const htmlTemplate = `
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Education</h2>
         {{ range .Education }}
-        <div class="my-1">
+        <div class="my-2">
             <div class="flex justify-between">
                 <span class="font-bold ">{{ .Degree }}</span>
                 <span class="text-gray-600">{{ .Year }}</span>
@@ -123,7 +123,7 @@ const htmlTemplate = `
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Projects</h2>
         {{ range .Projects }}
-        <div class="my-1">
+        <div class="my-2">
             <h3 class="font-bold ">{{ .Name }}</h3>
             <p class="text-gray-700"><strong>Technologies:</strong> {{ range .Technologies }}{{ . }}, {{ end }}</p>
             <ul class="list-disc pl-4 text-gray-700">
