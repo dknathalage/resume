@@ -78,12 +78,14 @@ const htmlTemplate = `
         <p class="text-md my-1">{{ .Summary }}</p>
     </section>
 
+    {{ if .KeySkills }}
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Key Skills</h2>
         <ul class="list-disc grid grid-cols-2 my-1 pl-4">
             {{ range .KeySkills }}<li>{{ . }}</li>{{ end }}
         </ul>
     </section>
+    {{ end }}
 
     <section class="section">
         <h2 class="text-lg font-semibold mt-2 border-b">Education</h2>
