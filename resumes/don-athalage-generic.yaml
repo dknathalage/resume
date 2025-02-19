@@ -3,8 +3,7 @@ email: dknathalage@gmail.com
 linkedin: https://www.linkedin.com/in/don-athalage/
 github: https://github.com/kushan-nilanga
 summary: |
-  I am a highly competent software engineer with multiple research projects and
-  attractive academic performance. In addition, I have taken a leadership role in multiple projects with impressive results. I am an excellent team player and have extensive knowledge in technical subjects in solution architecture, software engineering, machine learning, cloud development and data engineering.
+  I am a highly competent software engineer with multiple research projects and attractive academic performance. In addition, I have taken a leadership role in multiple projects with impressive results. I am an excellent team player and have extensive knowledge in technical subjects in solution architecture, software engineering, machine learning, cloud development and data engineering.
 
 key_skills:
   - Ability to work in teams and independently.
@@ -18,34 +17,43 @@ education:
     degree: Bachelor of Software Engineering (First Class Honours)
     year: "December 2023"
     achievements:
-      - Weighted Average Marks 85.5%
+      - WAM 85.5%
       - Associate Dean Research Summer Project (Scholarship) - 2021
       - Deakin Higher Degrees by Research funded project (Scholarship) - 2021
 
 experience:
-  - company: Deakin University, Melbourne, VIC
-    position: Research Assistant
-    duration: September 2021 - Present
-    details:
-  - company: ANZ Banking Group, Melbourne, VIC
-    position: Solutions Architect Intern (Cloud COE)
-    duration: September 2021 - Present
-    details:
-  - company: ANZ Banking Group, Melbourne, VIC
-    position: Solutions Architect (Cloud COE)
-    duration: September 2021 - Present
-    details:
   - company: ANZ Banking Group, Melbourne, VIC
     position: Cloud Platforms Engineer (ANZ Plus)
     duration: October 2023 - Present
     details:
+      - Design CI patterns to be used across wider organisation improving developer efficiency
+      - Set release engineering standards for new teams to start deploying applications to production and non-production environments seamlessly.
+      - Develop and deploy infrastructure using terraform to GCP
+
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: Solutions Architect (Cloud COE)
+    duration: September 2021 - Present
+    details:
+      - Multiple successful cloud migration designs following cloud security and architecture best practices.
+      - In depth application assessment to identify cloud migration candidates while meeting functional and non-functional requirements.
+      - Performed as a trusted advisor for cloud-native applications build on top of container platforms.
+
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: Solutions Architect Intern (Cloud COE)
+    duration: September 2021 - Present
+    details:
+
+  - company: Deakin University, Melbourne, VIC
+    position: Research Assistant
+    duration: September 2021 - Present
+    details:
 
 projects:
-  - name: Exact Cover Algorithms
-    technologies: [C++, Python, Combinatorial Algorithms]
+  - name: Network Resource Optimisation using KNative
+    technologies: [KNative, Kubernets, Golang]
     details:
-      - Conducted research on Zero-Suppressed Binary Decision Diagrams (ZDD).
-      - Studied DLX algorithms for solving exact cover problems.
+      - Setup virtual 5G network using Kubernetes and Knative, UERANSIM and free5GC
+      - Run performance testing on resource efficiency using Knative for network function resource management
 
   - name: Reinforcement Learning for 5G
     technologies: [Python, Simulation, Reinforcement Learning]
@@ -53,13 +61,22 @@ projects:
       - Studied 5G New Radio Specification on Network Function Virtualization.
       - Developed reinforcement learning algorithms for network slicing optimization.
 
+  - name: Exact Cover Algorithms
+    technologies: [C++, Python, Combinatorial Algorithms]
+    details:
+      - Conducted research on Zero-Suppressed Binary Decision Diagrams (ZDD).
+      - Studied DLX algorithms for solving exact cover problems.
+
 technical_skills:
   - category: Programming
     skills: [Python, JavaScript, C#, Golang]
+
   - category: Cloud & DevOps
     skills: [GCP, Docker, Kubernetes, Github Actions]
+
   - category: Databases
     skills: [MySQL, MongoDB]
+
   - category: IoT & Embedded
     skills: [Arduino, RaspberryPi, Robotics]
 
