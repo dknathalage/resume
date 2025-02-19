@@ -24,7 +24,7 @@ education:
 experience:
   - company: ANZ Banking Group, Melbourne, VIC
     position: Cloud Platforms Engineer (ANZ Plus)
-    duration: October 2023 - Present
+    duration: October 2024 - Present
     details:
       - Design CI patterns to be used across wider organisation improving developer efficiency
       - Set release engineering standards for new teams to start deploying applications to production and non-production environments seamlessly.
@@ -32,7 +32,7 @@ experience:
 
   - company: ANZ Banking Group, Melbourne, VIC
     position: Solutions Architect (Cloud COE)
-    duration: September 2021 - Present
+    duration: March 2023 - October 2024
     details:
       - Multiple successful cloud migration designs following cloud security and architecture best practices.
       - In depth application assessment to identify cloud migration candidates while meeting functional and non-functional requirements.
@@ -42,11 +42,16 @@ experience:
     position: Solutions Architect Intern (Cloud COE)
     duration: September 2021 - Present
     details:
+      - Work to create reusable pre-approved designs ANZ teams can use get on the cloud faster
+      - Perform as a trusted technical advisor, setting best practices for Cloud-native solution designs
 
   - company: Deakin University, Melbourne, VIC
     position: Research Assistant
     duration: September 2021 - Present
     details:
+      - Conducted research on probabilistic and machine learning models for Named Entity Recognition and Relation Extraction.
+      - Conducting research on deep learning (Transformer) models on information extraction.
+      - Developed NLP Pipeline for data cleaning, preprocessing, entity extraction and relation extraction.
 
 projects:
   - name: Network Resource Optimisation using KNative
