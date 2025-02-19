@@ -16,11 +16,10 @@ key_skills:
 
 education:
   - institution: Deakin University, Melbourne, VIC
-    degree: Bachelor of Software Engineering (Honours)
+    degree: Bachelor of Software Engineering (First Class Honours)
     year: "December 2023"
-    wam: "85.8"
     achievements:
-      - Peer Mentor - 2020
+      - Weighted Average Marks 85.5%
       - Associate Dean Research Summer Project (Scholarship) - 2021
       - Deakin Higher Degrees by Research funded project (Scholarship) - 2021
 
@@ -30,15 +29,15 @@ experience:
     duration: September 2021 - Present
     details:
   - company: ANZ Banking Group, Melbourne, VIC
-    position: Solutions Architect Intern
+    position: Solutions Architect Intern (Cloud COE)
     duration: September 2021 - Present
     details:
   - company: ANZ Banking Group, Melbourne, VIC
-    position: Solutions Architect
+    position: Solutions Architect (Cloud COE)
     duration: September 2021 - Present
     details:
   - company: ANZ Banking Group, Melbourne, VIC
-    position: Cloud Platforms Engineer
+    position: Cloud Platforms Engineer (ANZ Plus)
     duration: September 2021 - Present
     details:
 
