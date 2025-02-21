@@ -24,6 +24,12 @@ type Resume struct {
 		Year         string   `yaml:"year"`
 		Achievements []string `yaml:"details"`
 	} `yaml:"education"`
+	Certifications []struct {
+		Institution   string   `yaml:"institution"`
+		Certification string   `yaml:"certification"`
+		Year          string   `yaml:"year"`
+		Details       []string `yaml:"details"`
+	} `yaml:"certifications"`
 	Experience []struct {
 		Company  string   `yaml:"company"`
 		Position string   `yaml:"position"`
@@ -122,6 +128,22 @@ const htmlTemplate = `
             <p class="text-gray-700 italic">{{ .Institution }}</p>
             <ul class="list-disc pl-4 text-gray-700">
                 {{ range .Achievements }}<li>{{ . }}</li>{{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </section>
+
+    <section class="section">
+        <h2 class="text-lg font-semibold mt-2 border-b">Certifications</h2>
+        {{ range .Certifications }}
+        <div class="my-2">
+            <div class="flex justify-between">
+                <span class="font-bold ">{{ .Certification }}</span>
+                <span class="text-gray-600">{{ .Year }}</span>
+            </div>
+            <p class="text-gray-700 italic">{{ .Institution }}</p>
+            <ul class="list-disc pl-4 text-gray-700">
+                {{ range .Details }}<li>{{ . }}</li>{{ end }}
             </ul>
         </div>
         {{ end }}

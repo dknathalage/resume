@@ -53,6 +53,36 @@ experience:
       - Conducting research on deep learning (Transformer) models on information extraction.
       - Developed NLP Pipeline for data cleaning, preprocessing, entity extraction and relation extraction.
 
+certifications:
+  - institution: Amazon Web Services
+    certification: AWS Certified DevOps - Professional
+    details:
+      - Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.
+      - Deploy cloud architectures using AWS native CICD pipelines
+      - Develop AWS infrastructure using Terraform, Cloudformation and AWS CDK
+      - Implement compliance logic within AWS environment to ensure security and achitecture best practices.
+      - Automate boring tasks with AWS Serverless Application stacks.
+
+  - institution: Amazon Web Services
+    certification: AWS Certified Developer - Associate
+    details:
+      - Experienced in designing and implementing monitoring, metrics, and logging solutions in a DevOps context to
+      - ensure secure and compliant systems.
+      - Skilled in Infrastructure as Code (IAC) using AWS CloudFormation and Terraform, to programmatically manage infrastructure resources.
+      - Proficient in implementing continuous delivery and deployment techniques, automation and orchestration of releases.
+
+  - institution: Amazon Web Services
+    certification: AWS Certified Architect - Associate
+    details:
+      - Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services services.
+      - Experienced in implementing security best practices such as encryption, RBAC and policies, and secure application development on AWS.
+
+  - insitution: Amazon Web Services
+    certification: GCP Certified - Associate Cloud Engineer
+    details:
+      - Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services services.
+      - Experienced in implementing security best practices such as encryption, RBAC and policies, and secure application development on AWS.
+
 projects:
   - name: Network Resource Optimisation using KNative
     technologies: [KNative, Kubernets, Golang]
