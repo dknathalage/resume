@@ -1,0 +1,32 @@
+name: Auto Tag
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    name: Create Tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get Next Version
+        id: semver
+        uses: ietf-tools/semver-action@v1
+        with:
+          token: ${{ github.token }}
+          branch: main
+
+      - name: Create tag
+        shell: bash
+        run: |
+          git tag ${{ steps.semver.outputs.next }} ${{ env.COMMIT_SHA }}
+          git push origin ${{ steps.semver.outputs.next }}
