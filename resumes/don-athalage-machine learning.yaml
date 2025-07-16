@@ -1,0 +1,120 @@
+name: Don Athalage
+email: dknathalage@gmail.com
+linkedin: https://www.linkedin.com/in/dknathalage/
+github: https://github.com/dknathalage
+summary: |
+  I am a highly competent software and cloud engineer with extensive experience in data engineering, machine learning, and cloud platforms. With proven expertise in building scalable data infrastructure and MLOps platforms, I have successfully delivered reliable solutions while taking leadership roles in multiple projects. I am an excellent team player with strong technical knowledge in solution architecture, cloud development, data engineering, and machine learning.
+
+key_skills:
+  - Data engineering and MLOps platform development
+  - Cloud engineering and scalable infrastructure design
+  - Machine learning and natural language processing
+  - Strong interpersonal and cross-functional collaboration skills
+  - Full-stack development and DevOps practices
+
+education:
+  - institution: Deakin University, Melbourne, VIC
+    degree: Bachelor of Software Engineering (First Class Honours)
+    year: "December 2023"
+    details:
+      - WAM 85.5%
+      - Associate Dean Research Summer Project (Scholarship) - 2021
+      - Deakin Higher Degrees by Research funded project (Scholarship) - 2021
+
+experience:
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: Cloud Platforms Engineer (ANZ Plus)
+    duration: October 2024 - Present
+    details:
+      - Design and implement CI/CD patterns to improve developer efficiency across the organization
+      - Set release engineering standards for seamless application deployment to production and non-production environments
+      - Develop and deploy scalable serverless infrastructure using Terraform on GCP
+      - Implement comprehensive MLOps Platform using MLFlow, Dataproc Metastore, GCS, Trino and JupyterHub with Kubernetes, Flux and Terraform for reliable data infrastructure
+
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: Solutions Architect (Cloud COE)
+    duration: March 2023 - October 2024
+    details:
+      - Delivered multiple successful cloud migration designs following security and architecture best practices
+      - Conducted in-depth application assessments to identify cloud migration candidates while ensuring functional and non-functional requirements compliance
+      - Served as trusted advisor for cloud-native applications built on container platforms
+      - Trained and operationalized machine learning models using YoloV8 for infrastructure component detection from architecture diagrams, automating cloud migration assessments
+
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: Solutions Architect Intern (Cloud COE)
+    duration: August 2022 - March 2023
+    details:
+      - Created reusable pre-approved designs to accelerate cloud adoption for ANZ teams
+      - Performed as trusted technical advisor, establishing best practices for cloud-native solution designs
+
+  - company: Deakin University, Melbourne, VIC
+    position: Research Assistant
+    duration: September 2021 - March 2022
+    details:
+      - Conducted research on probabilistic and machine learning models for Named Entity Recognition and Relation Extraction
+      - Researched deep learning Transformer models for information extraction
+      - Developed comprehensive NLP pipeline for data cleaning, preprocessing, entity extraction and relation extraction
+
+certifications:
+  - institution: Amazon Web Services
+    certification: AWS Certified DevOps - Professional
+    details:
+      - Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS
+      - Deploy cloud architectures using AWS native CI/CD pipelines
+      - Develop AWS infrastructure using Terraform, CloudFormation and AWS CDK
+      - Implement compliance logic within AWS environment to ensure security and architecture best practices
+      - Automate operations with AWS Serverless Application stacks
+
+  - institution: Amazon Web Services
+    certification: AWS Certified Developer - Associate
+    details:
+      - Experienced in designing and implementing monitoring, metrics, and logging solutions in DevOps context for secure and compliant systems
+      - Skilled in Infrastructure as Code (IAC) using AWS CloudFormation and Terraform for programmatic infrastructure management
+      - Proficient in implementing continuous delivery and deployment techniques, automation and orchestration of releases
+
+  - institution: Amazon Web Services
+    certification: AWS Certified Architect - Associate
+    details:
+      - Proficient in developing, deploying, and debugging cloud-based applications on AWS utilizing cloud native services
+      - Experienced in implementing security best practices including encryption, RBAC and policies, and secure application development on AWS
+
+  - institution: Amazon Web Services
+    certification: GCP Certified - Associate Cloud Engineer
+    details:
+      - Proficient in developing, deploying, and debugging cloud-based applications on GCP utilizing cloud native services
+      - Experienced in implementing security best practices including encryption, RBAC and policies, and secure application development on GCP
+
+projects:
+  - name: Network Resource Optimisation using KNative
+    technologies: [KNative, Kubernetes, Golang]
+    details:
+      - Setup virtual 5G network using Kubernetes and Knative, UERANSIM and free5GC
+      - Conducted performance testing on resource efficiency using Knative for network function resource management
+
+  - name: Reinforcement Learning for 5G
+    technologies: [Python, Simulation, Reinforcement Learning]
+    details:
+      - Studied 5G New Radio Specification on Network Function Virtualization
+      - Developed reinforcement learning algorithms for network slicing optimization
+      - Effectively communicated complex technical concepts to non-technical stakeholders, enhancing understanding and collaboration
+
+  - name: Exact Cover Algorithms
+    technologies: [C++, Python, Combinatorial Algorithms]
+    details:
+      - Conducted research on Zero-Suppressed Binary Decision Diagrams (ZDD)
+      - Studied DLX algorithms for solving exact cover problems
+
+technical_skills:
+  - category: Data Engineering & AI/ML
+    skills: [Machine Learning, Natural Language Processing, Deep Learning, Reinforcement Learning, MLOps]
+
+  - category: Programming & Development
+    skills: [Python, JavaScript, C#, Golang, SQL]
+
+  - category: Cloud & DevOps
+    skills: [GCP, AWS, Docker, Kubernetes, Terraform, CI/CD, GitHub Actions]
+
+  - category: Data & Infrastructure
+    skills: [PostgreSQL, MongoDB, BigQuery, Data Pipeline Development, Infrastructure as Code]
+
+references: "Available upon request"
