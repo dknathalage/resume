@@ -1,0 +1,201 @@
+name: Don Athalage
+email: dknathalage@gmail.com
+linkedin: https://www.linkedin.com/in/dknathalage/
+github: https://github.com/dknathalage
+summary: |
+  Platform Engineer specializing in enterprise-scale AWS and GCP infrastructure with 3+ years of experience designing multi-account governance frameworks and infrastructure as code solutions. Expert in establishing CI/CD patterns, hybrid cloud authentication, and Kubernetes deployments that enable development teams to ship faster and more securely. Proven ability to modernize legacy systems, implement security controls at scale, and serve as a trusted technical advisor across the organization.
+
+key_skills:
+  - Enterprise cloud platform engineering (AWS, GCP)
+  - CI/CD pipeline design and implementation
+  - Infrastructure as Code (Terraform, CloudFormation, AWS CDK)
+  - Multi-account governance and security controls (SCPs, OUs, IAM)
+  - Kubernetes and container orchestration (GKE, EKS)
+  - Solution architecture and technical advisory
+
+education:
+  - institution: Deakin University, Melbourne, VIC
+    degree: Bachelor of Software Engineering (First Class Honours)
+    year: "December 2023"
+    details:
+      - Graduated with 85.5% Weighted Average Mark (WAM)
+      - Associate Dean Research Summer Project Scholarship recipient (2021)
+      - Deakin Higher Degrees by Research funded project Scholarship recipient (2021)
+
+experience:
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: AWS Cloud Platforms Engineer
+    duration: October 2025 - Present
+    details:
+      # ADD: Number of AWS accounts managed, specific SCPs implemented
+      - Architect and implement Service Control Policies (SCPs) and Organizational Units structure governing multi-account AWS environment with [X] accounts across [Y] business units
+      # ADD: Types of incidents, MTTR improvements, number of incidents handled
+      - Provide incident response and remediation for AWS infrastructure issues, maintaining [X]% uptime and reducing mean time to resolution by [Y]%
+      # ADD: Specific technologies refactored (e.g., Lambda, ECS, Step Functions), LOC reduced, performance gains
+      - Refactor legacy platform code to modern architectural patterns using [specific AWS services], improving [maintainability/performance/cost] by [X]%
+      # ADD: Any cost optimization work, security improvements, automation initiatives
+      # Example: "Implement cost optimization strategies reducing monthly AWS spend by $X through right-sizing and automated resource management"
+      # Example: "Establish Infrastructure as Code standards using Terraform, enabling self-service provisioning for [X] development teams"
+
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: GCP Cloud Platforms Engineer
+    duration: October 2024 - October 2025
+    details:
+      # ADD: Number of teams using these patterns, deployment frequency improvement
+      - Design and implement standardized CI/CD patterns adopted by [X] teams across the organization, reducing deployment time from [Y] hours to [Z] minutes
+      # ADD: Number of users/systems authenticated, any security incidents prevented
+      - Architect hybrid cloud authentication solution integrating GCP Identity Federation with on-premise Active Directory, enabling secure access for [X] users across [Y] applications
+      # ADD: Cluster size, number of nodes, workloads deployed, availability achieved
+      - Deploy and manage large-scale Kubernetes infrastructure using GKE Autopilot with FluxCD, supporting [X] microservices and maintaining [Y]% availability
+      # ADD: Number of teams onboarded, time to first deployment
+      - Establish release engineering standards and self-service tooling enabling [X] new teams to achieve production deployment within [Y] days of onboarding
+      - Develop and maintain infrastructure as code using Terraform, managing [X] GCP projects and [Y] resources across multiple environments
+
+  - company: ANZ Banking Group, Melbourne, VIC
+    position: Solutions Architect (Cloud COE)
+    duration: August 2022 - October 2024
+    details:
+      # ADD: Number of migrations, workload types, cost savings achieved
+      - Lead cloud migration architecture for [X] enterprise applications to AWS/GCP, ensuring compliance with security policies and achieving [Y]% cost reduction compared to on-premise
+      # ADD: Number of applications assessed, migration success rate
+      - Conduct comprehensive application assessments for [X] migration candidates, analyzing functional and non-functional requirements to determine optimal cloud migration strategies
+      # ADD: Number of teams advised, types of applications (microservices, APIs, batch processing)
+      - Serve as trusted technical advisor for [X] product teams building cloud-native applications on container platforms, establishing best practices for scalability and reliability
+      # ADD: Number of reference architectures created, adoption metrics
+      - Create and maintain library of [X] pre-approved reference architectures accelerating cloud adoption and reducing design time by [Y]%
+      - Define and evangelize cloud-native design patterns including twelve-factor apps, event-driven architecture, and microservices best practices across the organization
+
+  - company: Deakin University, Melbourne, VIC
+    position: Research Assistant
+    duration: September 2021 - March 2022
+    details:
+      - Conducted research on probabilistic and machine learning models for Named Entity Recognition (NER) and Relation Extraction in natural language processing
+      # ADD: Dataset size, accuracy improvements, any publications
+      - Developed end-to-end NLP pipeline for data cleaning, preprocessing, entity extraction, and relation extraction, achieving [X]% accuracy on [dataset name]
+      # ADD: If you contributed to any papers or presented findings
+      # Example: "Co-authored research paper presented at [conference/journal]"
+
+certifications:
+  - institution: Amazon Web Services
+    certification: AWS Certified DevOps Engineer - Professional
+    year: "[ADD YEAR]" # ADD: Certification year
+    details:
+      - Advanced expertise in implementing CI/CD pipelines, monitoring, and logging systems on AWS
+      - Proficient in Infrastructure as Code using Terraform, CloudFormation, and AWS CDK
+      - Demonstrated ability to design and deploy scalable, highly available, and fault-tolerant systems
+
+  - institution: Amazon Web Services
+    certification: AWS Certified Developer - Associate
+    year: "[ADD YEAR]" # ADD: Certification year
+    details:
+      - Experienced in developing, deploying, and debugging cloud-based applications using AWS native services
+      - Skilled in implementing monitoring, metrics, and logging solutions in DevOps environments
+      - Proficient in continuous delivery techniques and release automation
+
+  - institution: Amazon Web Services
+    certification: AWS Certified Solutions Architect - Associate
+    year: "[ADD YEAR]" # ADD: Certification year
+    details:
+      - Proficient in designing distributed systems and cloud architectures on AWS
+      - Experienced in implementing security best practices including encryption, IAM policies, and secure application development
+
+  - institution: Google Cloud Platform
+    certification: GCP Associate Cloud Engineer
+    year: "[ADD YEAR]" # ADD: Certification year
+    details:
+      - Proficient in deploying applications, monitoring operations, and managing enterprise solutions on GCP
+      - Experienced in implementing security controls, IAM policies, and compliance requirements on Google Cloud
+
+projects:
+  - name: Network Resource Optimization using KNative
+    technologies: [KNative, Kubernetes, Golang, 5G, free5GC, UERANSIM]
+    details:
+      # ADD: Performance improvements achieved, resource savings
+      - Deployed virtual 5G network infrastructure using Kubernetes, KNative, UERANSIM, and free5GC for network function virtualization research
+      - Conducted performance testing demonstrating [X]% improvement in resource efficiency using KNative for dynamic network function resource management
+
+  - name: Reinforcement Learning for 5G Network Slicing
+    technologies: [Python, Reinforcement Learning, Network Simulation, 5G NR]
+    details:
+      - Researched 5G New Radio specifications focusing on Network Function Virtualization (NFV) and network slicing architectures
+      # ADD: Algorithm type (DQN, PPO, etc.), performance improvements
+      - Developed and evaluated reinforcement learning algorithms for dynamic network slicing optimization, achieving [X]% improvement in resource utilization
+
+technical_skills:
+  - category: Cloud Platforms
+    skills:
+      [
+        AWS (EC2,
+        ECS,
+        EKS,
+        Lambda,
+        S3,
+        RDS,
+        VPC),
+        GCP (GKE,
+        Cloud Run,
+        Cloud Functions,
+        IAM),
+        Multi-account governance,
+      ]
+
+  - category: Infrastructure as Code
+    skills: [Terraform, CloudFormation, AWS CDK, Pulumi]
+
+  - category: Container & Orchestration
+    skills: [Kubernetes, Docker, GKE Autopilot, EKS, Helm, FluxCD, ArgoCD]
+
+  - category: CI/CD & Automation
+    skills: [GitHub Actions, GitLab CI, Jenkins, Cloud Build, CodePipeline]
+
+  - category: Programming Languages
+    skills: [Python, Go, JavaScript/TypeScript, Bash, C#]
+
+  - category: Observability & Security
+    skills:
+      [
+        CloudWatch,
+        Cloud Logging,
+        Prometheus,
+        Grafana,
+        IAM,
+        SCPs,
+        Security Hub,
+        Cloud Armor,
+      ]
+# references: "Available upon request"
+
+# NOTES FOR IMPROVEMENT:
+#
+# 1. QUANTIFY EVERYTHING: Add specific numbers throughout (accounts managed, teams supported, cost savings, performance improvements)
+#
+# 2. HIGHLIGHT AWS PLATFORM WORK: Your current role needs the most expansion since it's your primary experience
+#    - Add details about SCP implementation (which SCPs, what they prevent/enable)
+#    - Mention specific incident types and resolution strategies
+#    - Detail the refactoring work (what was legacy, what it became, why it matters)
+#
+# 3. ADD ACHIEVEMENTS: Consider adding:
+#    - Any cost savings you've driven
+#    - Process improvements (deployment frequency, MTTR, onboarding time)
+#    - Security improvements (vulnerabilities prevented, compliance achieved)
+#    - Developer efficiency gains
+#
+# 4. CERTIFICATION DATES: Add the years you obtained each certification
+#
+# 5. KEYWORDS FOR ATS: This version now includes many platform engineering keywords:
+#    - Multi-account governance, SCPs, OUs, IAM
+#    - Infrastructure as Code, Terraform, CloudFormation
+#    - CI/CD patterns, GitOps, FluxCD
+#    - Container orchestration, Kubernetes, GKE
+#    - Security controls, compliance, incident response
+#
+# 6. CONSIDER ADDING (if applicable):
+#    - Any thought leadership (blog posts, internal presentations, conference talks)
+#    - Open source contributions
+#    - Mentoring or leadership responsibilities
+#    - Awards or recognition at ANZ
+#
+# 7. TAILOR FOR ROLES: When applying, adjust the summary to match job requirements:
+#    - Platform Engineering → emphasize multi-account governance, IaC, self-service
+#    - Site Reliability Engineering → emphasize observability, incident response, automation
+#    - Cloud Architect → emphasize solution design, best practices, technical advisory
